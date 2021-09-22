@@ -1,0 +1,117 @@
+:root{
+    --bg-gradient: linear-gradient(90deg, rgba(29,30,40,1) 0%, rgba(38,28,45,1) 90%, rgba(38,26,45,1) 100%);
+    --text-counter: #FB5E84;
+    --bg-count-light: #343650;
+    --bg-count-dark: #2d2f45;
+    --text-stat: #8385A9;
+    --bg-alt: rgba(25, 26, 35, 1);
+    --bg-alt2: rgba(25, 26, 35, 0.2);
+}
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    font-family: 'Red Hat Text', sans-serif;
+    background: url(./images/bg-stars.svg), url(./images/pattern-hills.svg), linear-gradient(180deg, rgba(29,30,40,1) 0%, rgba(38,28,45,1) 90%, rgba(38,26,45,1) 100%);
+    background-repeat: no-repeat;
+    background-position-y: 0, bottom, 0;
+    background-position-x: 0, 25%, 0;
+}
+.container{
+    max-width: 327px;
+    margin: auto;
+    margin-top: 140px;
+}
+h1{
+    letter-spacing: 0.6rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+}
+.countdown{
+    margin-top: 54px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 260px;
+}
+.count-wrapper{
+    background-color: var(--bg-count-dark);
+    height: 70px;
+    width: 70px;
+    border-radius: 4px;
+    color: var(--text-counter);
+    position: relative;
+    overflow: hidden;
+}
+.line{
+    position: absolute;
+    top: 49.5%;
+    left: 3px;
+    height: 1px;
+    width: 64px;
+    background-color: var(--bg-alt2);
+}
+.line::after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--bg-alt);
+    position: absolute;
+    border-radius: 20px;
+    right: -5px;
+    top: -3px;
+}
+.line::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: var(--bg-alt);
+    position: absolute;
+    border-radius: 20px;
+    left: -5px;
+    top: -3px;
+}
+.count{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    font-size: 3.6rem;
+    line-height: 72px;
+}
+.top{
+    height: 70px;
+    clip-path: inset(0 0 50% 0);
+    background-color: var(--bg-count-dark);
+}
+.bottom{
+    height: 70px;
+    clip-path: inset(50% 0 0 0);
+    background-color: var(--bg-count-light);
+}
+.bottom-slider{
+    background-color: var(--bg-count-light);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    clip-path: inset(50% 0 0 0);
+    transform: rotate3d(1,0,0,-90deg);
+}
+.stat{
+    padding-top: 10px;
+    font-size: 0.7rem;
+    letter-spacing: 0.3rem;
+    color:var(--text-stat);
+    font-weight: bold;
+}
+.social-links{
+    width: 136px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
