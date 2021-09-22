@@ -2,7 +2,7 @@
     --bg-gradient: linear-gradient(90deg, rgba(29,30,40,1) 0%, rgba(38,28,45,1) 90%, rgba(38,26,45,1) 100%);
     --text-counter: #FB5E84;
     --bg-count-light: #343650;
-    --bg-count-dark: #2d2f45;
+    --bg-count-dark: #292b3f;
     --text-stat: #8385A9;
     --bg-alt: rgba(25, 26, 35, 1);
     --bg-alt2: rgba(25, 26, 35, 0.2);
@@ -91,9 +91,13 @@ h1{
     font-size: 3.6rem;
     line-height: var(--height);
 }
+.bg{
+    color: rgb(213, 80, 112);
+}
 .top{
     height: var(--height);
     clip-path: inset(0 0 50% 0);
+    color: rgb(213, 80, 112);
     background-color: var(--bg-count-dark);
 }
 .bottom{
