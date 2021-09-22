@@ -25,7 +25,7 @@ body{
 .container{
     max-width: 327px;
     margin: auto;
-    margin-top: 140px;
+    padding-top: 140px;
 }
 h1{
     letter-spacing: 0.6rem;
@@ -34,11 +34,11 @@ h1{
     color: white;
 }
 .countdown{
-    margin-top: 54px;
+    padding-top: 54px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 260px;
+    padding-bottom: 260px;
 }
 .count-wrapper{
     background-color: var(--bg-count-dark);
